@@ -84,24 +84,62 @@ use gap instead */
 .NavMenu_Link:hover { color: var(--Secondary); }
 
 /* Store */
-.Product {
+.Grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.Product {
+    background-color: var(--Primary2);
+    padding: 1rem;
 }
 
 .Product_Image {
-
-}
-
-.Product_Info {
-
+    width: 100%;
 }
 
 .Product_Name {
-
+    font-size: 4rem;
 }
 
 .Product_Price {
+    color: var(--Secondary);
+    font-size: 2.8rem;
+}
 
+.Product_Name, .Product_Price {
+    font-family: var(--Font);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Example Shirts Images */
+.BackG {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+    min-height: 30rem;
+}
+
+.BackG_Shirts {
+    background-image: url(../img/grafico1.jpg);
+    grid-row: 2 / 3;
+}
+
+.BackG_ShirtNode {
+    background-image: url(../img/grafico2.jpg);
+    grid-row: 8 / 9;
+}
+
+/* Media Query Store */
+@media (min-width: 768px) {
+
+    .BackG_ShirtNode {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+    }
 }
 
 /* Footer */
@@ -114,4 +152,8 @@ use gap instead */
 .Footer_Text {
     text-align: center;
     font-family: var(--Font);
+}
+
+@media (min-width: 768px) {
+    .Grid { grid-template-columns: repeat(3, 1fr); }
 }
