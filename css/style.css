@@ -1,18 +1,18 @@
-/* Paleta de colores y fuentes */
+/* Color & Fonts Palette */
 :root {
-    --Primario: #9c27b0;
-    --Primario2: #89119d;
-    --Secundario: #ffce00;
-    --Secundario2: rgb(233 187 2);
-    --Blanco: #ffffff;
-    --Negro: #000000;
-    --Fuente: 'Staatliches', cursive;
+    --Primary: #9c27b0;
+    --Primary2: #89119d;
+    --Secondary: #ffce00;
+    --Secondary2: rgb(233 187 2);
+    --White: #ffffff;
+    --Black: #000000;
+    --Font: 'Staatliches', cursive;
 }
 
-/* Ajustes Generales */
+/* Global Styles */
 html {
     box-sizing: border-box; /*! Box Model */
-    font-size: 62.5%; /*! Establece 10px = 1rem */
+    font-size: 62.5%; /*! Set 10px = 1rem */
 }
 
 *, *:before, *:after {
@@ -20,20 +20,20 @@ html {
 }
 
 body {
-    background-color: var(--Primario);
-    font-size: 16px; /*! Establece 10px = 1rem */
-    line-height: 1.5; /* Interlineado */
+    background-color: var(--Primary);
+    font-size: 16px; /*! Set 10px = 1rem */
+    line-height: 1.5; /* line Spacing */
 }
 
 p {
-    color: var(--Blanco);
+    color: var(--White);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
 }
 
 a { text-decoration: none; }
 
-img { width: 100%; }
+img { max-width: 100%; }
 
 .Container {
     margin: 0 auto;
@@ -41,8 +41,8 @@ img { width: 100%; }
 }
 
 h1, h2, h3 {
-    color: var(--Secundario);
-    font-family: var(--Fuente);
+    color: var(--Secondary);
+    font-family: var(--Font);
     text-align: center;
 }
 
@@ -51,3 +51,67 @@ h1 { font-size: 4rem; }
 h2 { font-size: 3.2rem; }
 
 h3 { font-size: 2.4rem; }
+
+/* Header Logo */
+.Header {
+    display: flex;
+    justify-content: center;
+}
+
+.Header_Logo { margin: 3rem 0; }
+
+/* Navigation Menu */
+
+.NavMenu {
+    background-color: var(--Primary2);
+    display: flex;
+    gap: 2rem; /* Replace margin propriety on Flexbox */
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.NavMenu_Link {
+    color: var(--White);
+    font-family: var(--Font);
+    font-size: 3rem;
+    /* margin-right: 2rem; Deprecated, use gap instead */
+}
+
+/* .NavMenu_Link:last-of-type { margin-right: 0;} Deprecated,
+use gap instead */
+
+.NavMenu_Link-Active,
+.NavMenu_Link:hover { color: var(--Secondary); }
+
+/* Store */
+.Product {
+
+}
+
+.Product_Image {
+
+}
+
+.Product_Info {
+
+}
+
+.Product_Name {
+
+}
+
+.Product_Price {
+
+}
+
+/* Footer */
+.Footer {
+    background-color: var(--Primary2);
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.Footer_Text {
+    text-align: center;
+    font-family: var(--Font);
+}
