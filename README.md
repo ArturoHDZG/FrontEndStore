@@ -1,12 +1,17 @@
 # FrontEnd Store
 
-![](#)
+![](https://user-images.githubusercontent.com/110303654/185726613-9e143dac-16c7-49d0-8124-8234f7df95e5.jpg)
+
 ## Ver pagina web [aquí](https://arturohdzg.github.io/FrontEndStore/)
 
 Creación de segundo proyecto web estático usando HTML y CSS<br />
 Aquí iré documentando cada avance del proceso desde el inicio hasta el fin.
 <hr>
 
+### Versión 1.0.0 (19/08/2022)
+* Página Web Demo finalizada.
+
+Ver avance del proyecto [aquí](https://github.com/ArturoHDZG/FrontEndStore/releases/tag/1.0.0)
 
 ### Versión 0.8.0 (19/08/2022)
 * Finalizado _about-us.html_.
