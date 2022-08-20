@@ -7,6 +7,12 @@ Creación de segundo proyecto web estático usando HTML y CSS<br />
 Aquí iré documentando cada avance del proceso desde el inicio hasta el fin.
 <hr>
 
+
+### Versión 0.8.0 (19/08/2022)
+* Finalizado _about-us.html_.
+
+Ver avance del proyecto [aquí](https://github.com/ArturoHDZG/FrontEndStore/releases/tag/0.8.0)
+
 ### Versión 0.5.0 (19/08/2022)
 * Finalizado _index.html_.
 * Store finalizado utilizando CSS Grid.
