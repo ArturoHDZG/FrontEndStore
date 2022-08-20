@@ -95,13 +95,9 @@ use gap instead */
     padding: 1rem;
 }
 
-.Product_Image {
-    width: 100%;
-}
+.Product_Image { width: 100%; }
 
-.Product_Name {
-    font-size: 4rem;
-}
+.Product_Name { font-size: 4rem; }
 
 .Product_Price {
     color: var(--Secondary);
@@ -139,7 +135,11 @@ use gap instead */
     .BackG_ShirtNode {
     grid-column: 2 / 4;
     grid-row: 5 / 6;
-    }
+}
+}
+
+@media (min-width: 768px) {
+    .Grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* Footer */
@@ -154,6 +154,37 @@ use gap instead */
     font-family: var(--Font);
 }
 
+/* About Us Page */
+
+.AboutUs {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.BuyUs {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+.BuyUs h3, p { margin: 0 auto; }
+
+/* Media Query About Us Page */
 @media (min-width: 768px) {
-    .Grid { grid-template-columns: repeat(3, 1fr); }
+    .AboutUs {
+            flex-direction: row-reverse;
+            gap: 2rem;
+            justify-content: center;
+            margin: 0;
+        }
+
+    .AboutUs_Text { max-width: 536px; }
+
+    .BuyUs {
+        display: flex;
+        justify-content: center;
+    }
 }
